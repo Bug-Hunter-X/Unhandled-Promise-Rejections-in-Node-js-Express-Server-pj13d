@@ -1,0 +1,3 @@
+# Unhandled Promise Rejections in Node.js Express Server
+
+This repository demonstrates a common error in Node.js Express servers: unhandled promise rejections that occur when using async operations without proper error handling.  The example shows a server with a 5-second delay before sending a response. If a client disconnects before the response is sent, the promise remains unresolved resulting in an unhandled rejection.  The solution demonstrates how to handle these rejections to prevent crashes.
